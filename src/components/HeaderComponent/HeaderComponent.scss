@@ -1,0 +1,46 @@
+.header_top {
+    background-color: rgb(129, 170, 204);
+    color: white;
+
+    h1 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+.nav-item a {
+    font-size: 16px;
+}
+
+.header_right {
+    list-style: none;
+    li+li{
+        margin-left: 20px;
+    }
+    font-size: 20px;
+    cursor: pointer;
+}
+.sign_inup {
+    padding-top: 5px;
+    list-style: none;
+    position: absolute;
+    background-color: rgb(55, 57, 57);
+    width: 90px;
+    margin-top: 5px;
+    color: #ffffff;
+    margin-left: -33px;
+    font-size: 14px;
+    display: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hoverSigninup:hover {
+    .sign_inup {
+        display: block;
+    }
+}
+.hoverSigninup {
+    padding-bottom: 5px;
+}
+

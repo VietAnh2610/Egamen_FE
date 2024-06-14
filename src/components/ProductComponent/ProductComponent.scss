@@ -1,0 +1,121 @@
+.product-component-item {
+    display: flex;
+    justify-content: center;
+}
+.product-image-item {
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.product-component-item {
+    transition: transform 0.6s ease;
+}
+
+.product-component-item:hover {
+    transform: scale(0.95); /* Thu nhỏ toàn bộ phần tử xuống 95% */
+}
+  
+.product-component-item {
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+.product-component-item:hover .hover-select {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  
+.hover-select {
+    background-color: rgba(255, 253, 253, 0.8);
+    z-index: 1000;
+    position: absolute;
+    top: 85%; 
+    left: 50%; 
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    border-radius: 7px; 
+    transform: translate(-50%, 50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+}
+  
+.hover-select-cart {
+    border-right: 1px solid white;
+}
+  
+.hover-select-cart, .hover-select-eye {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 40px;
+    height: 40px;
+    font-size: 13px;
+}
+  
+.hover-select-cart:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-radius: 7px 0 0 7px; 
+}
+.hover-select-eye:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-radius: 0 7px 7px 0;
+}
+  
+.hover-select-cart:hover i, .hover-select-eye:hover i {
+    color: white; 
+}
+  
+.produc-component-info {
+    ul {
+        margin-top: 7px;
+        list-style: none;
+        text-align: left;
+        padding: 0;
+
+        li {
+            width: 100%;
+            font-size: 16px;
+            font-weight: 500;
+            &:nth-child(2){
+                color: rgb(22, 93, 245);
+            }
+            &:nth-child(3){
+                color: black;
+            }
+            &:last-child{
+                display: flex;
+            }
+        }
+    } 
+}
+
+.info-item {
+    background-color:rgb(222, 0, 0) ;
+    margin-left: 10px;
+    border-radius: 15px;
+    padding: 0 7px;
+    color: #fff;
+    font-size: 13px;
+    height: 22px;
+}
+.rating {
+    margin-top: -11px;
+    color: orangered;
+    font-size: 14px;
+    i+i{
+        margin-left: 5px;
+    }
+}
+.product-item {
+    margin-bottom: 20px;
+}
+
+.produc-component-info ul li:first-child:hover {
+    color: rgb(0, 133, 250);
+}

@@ -9,6 +9,7 @@ import OrderPage from './pages/OrderPage/OrderPage'
 import { routes } from './routes';
 import { Header } from 'antd/es/layout/layout';
 import HeaderComponent from './components/HeaderComponent/HeaderComponent';
+import FooterComponent from './components/FooterComponent/FooterComponent';
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
           })}
         </Routes>
       </Router>
+
+      <FooterComponent/>
     </div>
   )
 }

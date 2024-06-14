@@ -1,0 +1,75 @@
+
+
+.homepage-itroduce {
+    display: flex;
+    font-size: 15px;
+}
+.img-homepage-intro {
+    margin-top: 3px;
+}
+.text-homepage-intro {
+    
+    margin-left: 15px;
+    display: block;
+    p {
+        font-weight: 500;
+        margin: 0 auto;
+        padding: 0 0 2px 0;
+    }
+}
+
+.all-product {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 10px;
+    i{
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+}
+.all-product:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+}
+@media (max-width: 1000px) {
+    .homepage-itroduce {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+.text-homepage-products {
+    margin-top: 10px;
+    p{
+        font-size: 19px;
+        font-weight: 400;
+        margin: 0 auto;
+    }
+    span{
+        font-size: 15px;
+        color: rgb(143, 143, 143);
+    }
+}
+.text-center {
+    font-size: 30px;
+    font-weight: 400;
+}
+.hover-product {
+    transition: transform 0.3s ease;
+}
+
+.hover-product:hover {
+    transform: scale(1.06); /* Phóng to ảnh lên 10% */
+}
+
