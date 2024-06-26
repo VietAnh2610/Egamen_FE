@@ -25,7 +25,7 @@
     margin: 0 auto;
     border: 1px solid black;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 7px;
     i{
         margin-top: 5px;
         margin-left: 5px;
@@ -56,14 +56,15 @@
         font-weight: 400;
         margin: 0 auto;
     }
-    span{
-        font-size: 15px;
-        color: rgb(143, 143, 143);
-    }
 }
+
 .text-center {
     font-size: 30px;
     font-weight: 400;
+    .hihi {
+        font-size: 15px;
+        color: #999999;
+    }
 }
 .hover-product {
     transition: transform 0.3s ease;
@@ -73,3 +74,29 @@
     transform: scale(1.06); /* Phóng to ảnh lên 10% */
 }
 
+.underline {
+    position: relative;
+  }
+  
+  .underline::after {
+    content: "";
+    position: absolute;
+    margin-left: -5px;
+    bottom: 15px; /* Adjust position if necessary */
+    width: 290px;
+    height: 1px; /* Thickness of the underline */
+    background-color: #aca9a9; /* Color of the underline */
+  }
+  .collection-item {
+    color: gray;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-bottom 0.3s;
+    user-select: none;
+  }
+  
+  .collection-item.active {
+    color: black;
+    border-bottom: 2px solid black;
+  }
+  

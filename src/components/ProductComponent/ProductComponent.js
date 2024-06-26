@@ -17,13 +17,15 @@ const ProductComponent = () => {
         <div className="d-flex flex-column align-items-center">
           <div className="hover-select">
             <div className="hover-select-cart">
-              <i class="fa-solid fa-cart-plus"></i>
+              <i className="fa-solid fa-cart-plus"></i>
+              <div className="tooltip">Thêm sản phẩm</div>
             </div>
             <div className="hover-select-eye">
-              <i class="fa-solid fa-eye"></i>
+              <i className="fa-solid fa-eye"></i>
+              <div className="tooltip">Xem trực tiếp</div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
 
       <div className="produc-component-info">
@@ -36,9 +38,9 @@ const ProductComponent = () => {
           </li>
         </ul>
         <div className="rating">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
+          <i className="fa-solid fa-star"></i>
         </div>
       </div>
     </div>

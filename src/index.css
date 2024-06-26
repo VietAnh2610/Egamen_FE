@@ -8,3 +8,44 @@ html{
   font-size: 62.5%;
 }
 
+* {
+  user-select: none;
+}
+
+/* :root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --navbar-background-color: #f8f9fa;
+  --navbar-text-color: #000000;
+}
+
+body.dark-mode {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --navbar-background-color: #333;
+  --navbar-text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--navbar-background-color);
+  color: var(--navbar-text-color);
+}
+
+.header_top, .header_right {
+  background-color: var(--navbar-background-color);
+  color: var(--navbar-text-color);
+}
+
+.container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+} */

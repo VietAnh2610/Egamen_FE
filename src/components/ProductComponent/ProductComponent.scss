@@ -119,3 +119,28 @@
 .produc-component-info ul li:first-child:hover {
     color: rgb(0, 133, 250);
 }
+
+.tooltip {
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: #fff;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+  
+.hover-select-cart:hover .tooltip, .hover-select-eye:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    font-size: 13px;
+    width: 110px;
+    text-align: center;
+  }
+  

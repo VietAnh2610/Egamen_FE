@@ -18,6 +18,7 @@
     }
     font-size: 20px;
     cursor: pointer;
+    margin: 0;
 }
 .sign_inup {
     padding-top: 5px;
@@ -33,14 +34,57 @@
     border-radius: 5px;
     cursor: pointer;
     z-index: 1000;
+    width: auto;
 }
+
 
 .hoverSigninup:hover {
     .sign_inup {
         display: block;
     }
 }
+
 .hoverSigninup {
     padding-bottom: 5px;
 }
 
+  
+.hoverSigninup .sign_inup .signup:hover {
+    color: rgb(129, 170, 204); 
+}
+.hoverSigninup .sign_inup .signin:hover {
+    color: rgb(129, 170, 204); 
+}
+
+.header_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white; /* Đặt màu nền để tránh chồng chéo */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Thêm shadow nếu muốn */
+  }
+.nav-item {
+    margin-right: 25px;
+}
+
+.nav-item {
+    position: relative;
+    padding-bottom: 2px; /* Để tránh nhảy lên khi hover */
+  }
+  
+  .nav-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: black;
+    transition: width 0.2s ease-in-out; /* Điều chỉnh thời gian và kiểu chuyển đổi theo ý muốn */
+  }
+  
+  .nav-item:hover::after {
+    width: 100%;
+  }

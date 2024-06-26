@@ -1,11 +1,12 @@
 import React from "react";
 import "./PolicyPage.scss";
+import { Link } from "react-router-dom";
 
 const SalesPolicyPage = () => {
   return (
     <div className="container px-5 form-policy">
       <div class="signup_header">
-        <p>Trang chủ</p>
+      <Link className="link-homepage" to="/">Trang chủ</Link>
         <p>/</p>
         <p style={{ color: "rgb(191, 191, 191)" }}>Chính sách bán hàng</p>
       </div>
